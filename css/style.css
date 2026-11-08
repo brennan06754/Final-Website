@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+    background-color: #faf4e8;
+    color: #252b26;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+.container {
+    width: 90%;
+    max-width: 950px;
+    margin: auto;
+}
+
+h1, h2, h3, .brand {
+    font-family: Georgia, serif;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+a {
+    color: #143d36;
+}
+
+.site-header, footer {
+    background-color: #143d36;
+    color: white;
+    padding: 16px 0;
+}
+
+.site-header a, footer a {
+    color: white;
+}
+
+.brand {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.brand span {
+    display: block;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #e8bd70;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    display: inline-block;
+    margin-right: 16px;
+}
+
+.hero, .section {
+    padding: 30px 0;
+}
+
+.visit-strip, .news-section {
+    background-color: #f1e4ca;
+}
+
+.quick-info {
+    padding: 12px 0;
+}
+
+.quick-info span {
+    display: inline-block;
+    margin-right: 12px;
+    margin-left: 8px;
+}
+
+/* CSS Grid for the photos and news cards */
+.two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    align-items: center;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.news-card {
+    background-color: #fffaf1;
+    border: 1px solid #cfbea3;
+    padding: 14px;
+}
+
+.eyebrow {
+    color: #9b4032;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+figcaption {
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.buttons {
+    margin-top: 15px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #e8bd70;
+    color: #252b26;
+    border: 1px solid #9f7939;
+    padding: 7px 12px;
+    margin: 3px 3px 3px 0;
+    font: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+select {
+    padding: 6px;
+    font: inherit;
+}
+
+output {
+    display: block;
+    margin: 10px 0;
+}
+
+.my-take {
+    background-color: #fffaf1;
+    border-left: 4px solid #9b4032;
+    padding: 10px 12px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+caption {
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 6px;
+}
+
+th, td {
+    border: 1px solid #cfbea3;
+    padding: 8px;
+    text-align: left;
+}
+
+thead {
+    background-color: #143d36;
+    color: white;
+}
+
+@media (max-width: 700px) {
+    .two-column, .news-grid {
+        grid-template-columns: 1fr;
+    }
+}

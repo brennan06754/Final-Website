@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tai Tung | News</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a class="brand" href="index.html">
+                Tai Tung
+                <span>Chinese Restaurant</span>
+            </a>
+
+            <nav aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="news.html" aria-current="page">News</a>
+                <a href="https://www.taitungrestaurant.com/menu">Menu</a>
+                <a href="index.html#visit">Visit</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="section news-section">
+        <div class="container">
+            <h1>News &amp; Stories</h1>
+            <p>Read about the people, food, and history behind Tai Tung.</p>
+
+            <p class="my-take">
+                <strong>My take:</strong> The neon sign story is my favorite.
+                I like that Tai Tung brought back a piece of the original
+                storefront. It makes me want to see the sign in person.
+            </p>
+
+            <form id="news-filter">
+                <label for="category">Browse by category</label>
+                <select id="category" name="category">
+                    <option value="all">All stories</option>
+                    <option value="press">Press</option>
+                    <option value="history">History</option>
+                    <option value="visitors">Famous visitors</option>
+                </select>
+                <button class="button" type="submit">Show Stories</button>
+            </form>
+
+            <output id="story-count" for="category" aria-live="polite">
+                Showing 3 stories.
+            </output>
+
+            <div class="news-grid">
+                <article class="news-card" data-category="press">
+                    <p class="eyebrow">Press · September 2020</p>
+                    <h2>85 years of comfort food</h2>
+                    <p>Seattle Refined looks back at Tai Tung’s first 85 years.</p>
+                    <a href="https://seattlerefined.com/eat-drink/tai-tung-celebrates-85-years-of-chinese-comfort-food">
+                        Read the Seattle Refined article
+                    </a>
+                </article>
+
+                <article class="news-card" data-category="history">
+                    <p class="eyebrow">History · January 2018</p>
+                    <h2>The neon sign returns</h2>
+                    <p>A replica of the original Tai Tung Chop Suey sign went up on King Street.</p>
+                    <a href="https://nwasianweekly.com/2018/01/neon-sign-at-tai-tung/">
+                        Read about the neon sign
+                    </a>
+                </article>
+
+                <article class="news-card" data-category="visitors">
+                    <p class="eyebrow">Famous visitors · January 2018</p>
+                    <h2>Bruce Lee's favorite table</h2>
+                    <p>Eater visits Tai Tung to learn about the dishes Bruce Lee kept coming back for.</p>
+                    <a href="https://www.eater.com/2018/1/15/16886416/tai-tung-seattle-bruce-lee-video">
+                        Watch the Eater feature
+                    </a>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            Tai Tung · Brennan's redesign project ·
+            <a href="https://www.taitungrestaurant.com/news">Original news page</a>
+        </div>
+    </footer>
+</body>
+</html>
