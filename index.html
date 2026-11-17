@@ -3,137 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tai Tung Chinese Restaurant | Home</title>
+    <meta name="description" content="Welcome to Tai Tung Chinese Restaurant in Seattle's Chinatown-International District.">
+    <title>Tai Tung Chinese Restaurant - Home</title>
+    <link rel="icon" type="image/png" href="images/horse.png">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header class="site-header">
-        <div class="container">
+        <div class="container header-inner">
             <a class="brand" href="index.html">
-                Tai Tung
-                <span>Chinese Restaurant</span>
+                <img
+                    class="brand-logo"
+                    src="images/horse.png"
+                    alt=""
+                    width="54"
+                    height="54"
+                >
+                <div class="brand-text">
+                    Tai Tung
+                    <span>Chinese Restaurant</span>
+                </div>
             </a>
 
             <nav aria-label="Main navigation">
                 <a href="index.html" aria-current="page">Home</a>
-                <a href="news.html">News</a>
-                <a href="https://www.taitungrestaurant.com/menu">Menu</a>
-                <a href="#visit">Visit</a>
+                <a href="news.html">History &amp; News</a>
+                <a href="menu.html">Menu</a>
+                <a href="favorites.html">Favorite Dishes</a>
+                <a href="contact.html">Contact</a>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="hero">
-            <div class="container two-column">
-                <div>
-                    <p class="eyebrow">Seattle's Chinatown to International District</p>
-                    <h1>A Seattle table since 1935</h1>
-                    <p>
-                        Tai Tung is Seattle's oldest Chinese restaurant.
-                        Grandpa Quan started it in 1935, and his family
-                        has passed it down through generations.
-                    </p>
+        <section class="home-hero" aria-labelledby="home-title">
+            <figure class="home-hero-media">
+                <img
+                    src="images/firstimage.png"
+                    alt="Tai Tung's storefront and neon Chop Suey sign on South King Street"
+                    fetchpriority="high"
+                >
+                <figcaption>Photo from The Seattle Times</figcaption>
+            </figure>
 
-                    <div class="buttons">
-                        <a class="button" href="https://www.taitungrestaurant.com/menu">
-                            View Menu
-                        </a>
-                        <a class="button" href="tel:+12066227372">
-                            Call for Takeout
-                        </a>
-                    </div>
-                </div>
+            <div class="container home-hero-content">
+                <p class="eyebrow">Seattle's Chinatown-International District</p>
+                <h1 id="home-title">A Seattle Restaurant <br>since 1935</h1>
+                <p>
+                    Welcome to Tai Tung, which is an old family-run Chinese restaurant on
+                    South King Street, in Seattle WA. Come by for lunch or dinner, bring friends or family. Even pick up something to share at home!
 
-                <figure>
-                    <img
-                        src="https://static.seattletimes.com/wp-content/uploads/2018/12/12212018_lede_130849-1024x683.jpg"
-                        alt="Tai Tung storefront with its Chop Suey sign"
-                    >
-                    <figcaption>Storefront photo from The Seattle Times</figcaption>
-                </figure>
-            </div>
-        </section>
-
-        <div class="visit-strip">
-            <div class="container quick-info">
-                <strong>655 S King St, Seattle</strong>
-                <span>Open daily · 11 am to 7:30 pm</span>
-                <a href="https://www.google.com/maps/search/?api=1&amp;query=655+S+King+St+Seattle+WA">
-                    Get Directions
-                </a>
-            </div>
-        </div>
-
-        <section class="section">
-            <div class="container two-column">
-                <figure>
-                    <img
-                        src="https://frumvintxhwwdlxdneim.supabase.co/storage/v1/object/public/article_images/0f6821a3-f48b-4e4e-941e-1c12e0c1e86c/vKTr84jBjTpvGsvZ.jpeg"
-                        alt="Oyster sauce beef with onions and scallions"
-                        loading="lazy"
-                    >
-                    <figcaption>Oyster sauce beef photo from Cook Clean Repeat</figcaption>
-                </figure>
-
-                <div>
-                    <h2>Bruce Lee's usual order</h2>
-                    <p>
-                        Bruce Lee was a regular at Tai Tung. He liked to sit
-                        at the same back table and order oyster sauce beef
-                        and garlic shrimp.
-                    </p>
-
-                    <p class="my-take">
-                        <strong>My take:</strong> I think it's cool that Bruce Lee
-                        had a regular table and a usual order. It makes Tai Tung
-                        feel like a neighborhood hangout. I'd try the garlic
-                        shrimp first.
-                    </p>
-
-                    <a href="news.html">Read more Tai Tung stories →</a>
+                <div class="buttons">
+                    <a class="button" href="menu.html">Here is the menu</a>
+                    <a class="button button-outline" href="contact.html">Please plan your visit as the resturant gets busy.</a>
                 </div>
             </div>
         </section>
 
-        <section class="section visit-strip" id="visit">
+        <section class="section container" aria-labelledby="first-visit-title">
+            <h2 id="first-visit-title">First Time?</h2>
+            <p class="intro-text">
+                I would hope to come with a few friends and let everyone choose choose one dish
+                for the table. That way you can eat family style and still get to try a little of everything.     </p>
+
+            <div class="home-guide">
+                <article class="panel">
+                    <h3>Find something to share</h3>
+                    <p>
+                        Make sure to use the menu's filter to look at noodles, seafood, and
+                        other dishes. Each featured dish has a photo to help
+                        you decide, but the resturant looks and smells better!
+                    </p>
+                    <a href="menu.html">View the menu</a>
+                </article>
+
+                <article class="panel">
+                    <h3>Get an idea for your first order</h3>
+                    <p>
+                        See what Bruce Lee used to order and what I'd pick
+                        for a meal with friends.
+                    </p>
+                    <a href="favorites.html">See the favorites</a>
+                </article>
+
+                <article class="panel">
+                    <h3>Pick up dinner</h3>
+                    <p>
+                        If you don't want to dine in, pick out which dishes you want and call!
+                    </p>
+                    <a href="tel:+12066227372">Call (206) 622-7372</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="section home-neighborhood" aria-labelledby="neighborhood-title">
             <div class="container two-column">
                 <div>
-                    <h2>Visit Tai Tung</h2>
-                    <p>655 South King Street<br>Seattle, WA 98104</p>
-                    <a href="https://www.google.com/maps/search/?api=1&amp;query=655+S+King+St+Seattle+WA">
-                        Get Directions
-                    </a>
+                    <h2 id="neighborhood-title">Lunch on King Street</h2>
+                    <p>
+                        If you have time before lunch, I would walk along South
+                        King Street and stop at a shop that catches your eye.
+                        On your way to Tai Tung, look up for the neon Chop
+                        Suey sign above the entrance. It is great for a instagram photo!
+                    </p>
+                    <a href="news.html">Read about Tai Tung's history →</a>
                 </div>
 
-                <table>
-                    <caption>Hours and contact</caption>
-                    <thead>
-                        <tr>
-                            <th scope="col">Service</th>
-                            <th scope="col">Details</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">Daily hours</th>
-                            <td>11 am to 7:30 pm</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Takeout and reservations</th>
-                            <td><a href="tel:+12066227372">(206) 622-7372</a></td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="panel">
+                    <h3>Find Tai Tung</h3>
+                    <address>
+                        655 South King Street<br>
+                        Seattle, WA 98104
+                    </address>
+                    <p>Open daily from 11 a.m. to 7:30 p.m.</p>
+                    <a href="contact.html">Get directions and visiting details →</a>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            Tai Tung · Brennan's redesign website ·
-            <a href="https://www.taitungrestaurant.com/">Original website</a>
+          Tai Tung · Brennan's project
+            <a
+                href="https://www.taitungrestaurant.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >Original restaurant site</a>
         </div>
     </footer>
 </body>

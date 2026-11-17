@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tai Tung Chinese Restaurant - Menu</title>
+    <link rel="icon" type="image/png" href="images/horse.png">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">
+                Tai Tung
+                <span>Chinese Restaurant</span>
+            </a>
+
+            <nav aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="news.html">History &amp; News</a>
+                <a href="menu.html" aria-current="page">Menu</a>
+                <a href="favorites.html">Favorite Dishes</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-heading">
+            <div class="container">
+                <h1>Menu</h1>
+                <p>Browse six featured dishes or open the restaurant's full menu.</p>
+                <div class="buttons">
+                    <a class="button" href="https://www.taitungrestaurant.com/menu"
+                       target="_blank" rel="noopener noreferrer">View the Full Menu</a>
+                    <a class="button button-green" href="tel:+12066227372">Call for Takeout</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section container" aria-labelledby="dishes-title">
+            <h2 id="dishes-title">Featured dishes</h2>
+
+            <form class="filter-form" id="menu-filter">
+                <div>
+                    <label for="dish-category">Choose a dish category</label>
+                    <select id="dish-category">
+                        <option value="all">All dishes</option>
+                        <option value="beef">Beef</option>
+                        <option value="seafood">Seafood</option>
+                        <option value="noodles">Noodles</option>
+                        <option value="chicken">Chicken</option>
+                        <option value="pork">Pork</option>
+                    </select>
+                </div>
+                <button class="button" type="submit">Show Dishes</button>
+            </form>
+
+            <output id="dish-count" for="dish-category" aria-live="polite">Showing 6 dishes.</output>
+
+            <div class="three-column">
+                <article class="dish-card" data-category="beef">
+                    <img src="images/oyster.png" alt="Sliced beef and onions on a red-rimmed platter" loading="lazy">
+                    <div class="dish-details">
+                        <h3>Oyster Sauce Beef</h3>
+                        <p>Sliced beef and onions in a savory oyster sauce.</p>
+                        <small>
+                            Photo from stock images.
+                        </small>
+                    </div>
+                </article>
+
+                <article class="dish-card" data-category="seafood">
+                    <img src="images/shrimp.png" alt="Garlic shrimp and vegetables on an oval plate" loading="lazy">
+                    <div class="dish-details">
+                        <h3>Garlic Shrimp</h3>
+                        <p>Shrimp cooked with garlic.</p>
+                        <small>
+                            Photo from stock images.
+                        </small>
+                    </div>
+                </article>
+
+                <article class="dish-card" data-category="noodles">
+                    <img src="images/beefchow.png" alt="Wide rice noodles with beef and bean sprouts" loading="lazy">
+                    <div class="dish-details">
+                        <h3>Beef Chow Fun</h3>
+                        <p>Wide rice noodles stir-fried with beef and bean sprouts.</p>
+                        <small>
+                            Photo from stock images.
+                        </small>
+                    </div>
+                </article>
+
+                <article class="dish-card" data-category="chicken">
+                    <img src="images/butteredchicken.png" alt="Breaded chicken sprinkled with almonds" loading="lazy">
+                    <div class="dish-details">
+                        <h3>Almond Chicken</h3>
+                        <p>Crisp battered chicken topped with almonds, with sauce on the side.</p>
+                        <small>
+                            Photo from stock images.
+                        </small>
+                    </div>
+                </article>
+
+                <article class="dish-card" data-category="pork">
+                    <img src="images/pork.png" alt="Glazed sweet-and-sour pork on a serving plate" loading="lazy">
+                    <div class="dish-details">
+                        <h3>Sweet &amp; Sour Pork</h3>
+                        <p>Battered pork pieces coated in a tangy sweet-and-sour sauce.</p>
+                        <small>
+                            Photo from stock images.
+                        </small>
+                    </div>
+                </article>
+
+                <article class="dish-card" data-category="chicken">
+                    <img src="images/chicken.png" alt="Close-up of golden fried chicken wings" loading="lazy">
+                    <div class="dish-details">
+                        <h3>Fried Chicken Wings</h3>
+                        <p>Golden fried wings to share with the table.</p>
+                        <small>
+                            Photo from stock images.
+                        </small>
+                    </div>
+                </article>
+            </div>
+
+            <p class="menu-note">
+                For current prices, ingredients, or availability,
+                <a href="contact.html">call the restaurant</a>.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+           Tai Tung · Brennan's project
+            <a href="https://www.taitungrestaurant.com/"
+               target="_blank" rel="noopener noreferrer"> Original restaurant site</a>
+        </div>
+    </footer>
+</body>
+</html>
